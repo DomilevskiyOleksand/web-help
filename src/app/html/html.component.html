@@ -1,0 +1,22 @@
+<div class="html-info-container">
+
+
+        <div *ngIf="!htCollapsed" class="list htm">
+            <div class= "second-html">
+                    <a *ngFor="let item of htlist, let i = index" (click)="toggleCollapse(i)">{{item}}</a>
+         </div>
+         </div>
+         <div *ngIf="htCollapsed">
+                <button (click)="toggleCollapsed()"><<</button>
+       <br>
+        {{tagsdetal}}
+        {{rount}}
+          </div>
+         
+      <!--
+      <hr>
+      <button (click)="continue()">
+          Continue
+      </button>-->
+    </div>
+    

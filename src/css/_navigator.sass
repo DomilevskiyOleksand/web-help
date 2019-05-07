@@ -1,0 +1,47 @@
+nav
+	z-index: 1
+	background-color: $gray
+	margin: 10px 0 100px 0
+	text-align: center
+	word-wrap: break-word !important
+	ul
+		
+		padding: 0
+		margin-right: 0
+		list-style: none
+		position: relative
+		li
+			margin-right: 10px
+			display: inline-block
+			background-color: $gray
+		ul
+			display: none
+			position: absolute
+			top: 60px
+		li:hover > ul
+			display: block
+			z-index: 1
+	a
+		display: block
+		padding: 0 10px
+		color: #FFF
+		font-size: 20px
+		line-height: 60px
+		text-decoration: none
+		&:hover
+			background-color: $accent
+	ul
+		ul
+			li
+				width: 170px
+				float: none
+				display: list-item
+				position: relative
+li > a
+	&:after
+	content: '+'
+	&:only-child:after
+	content: ''
+.navigator 
+	margin: 0 auto
+	line-height: 1

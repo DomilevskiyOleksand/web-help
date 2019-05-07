@@ -1,0 +1,43 @@
+@import "grid"
+.technologies-section
+	@extend .technologies-section-gr
+	padding: 10px
+	
+
+.technologies-item
+	@extend .technologies-item-gr
+	min-height: 32vh
+	background-size: 100% 100%
+	background-position: center
+	text-align: center
+	align-content: center
+	padding: $gutter
+	font-size: 20px
+	font-weight: bold
+	color: #fff
+	position: relative
+	transition: color .5s ease
+	cursor: pointer
+	text-decoration: none
+	
+	&:hover
+		color: $accent
+		&::before
+			opacity: .85
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: $dark
+		opacity: .65
+		transition: opacity .5s ease
+	> *
+		z-index: 1
+
+	
+.buttoncase
+	grid-column: 1 / 5
+	padding: $gutter $gutter 50px
